@@ -1,0 +1,56 @@
+/* بک‌گراند لوکس و مدرن */
+body {
+    background: url('https://via.placeholder.com/1500x1000?text=Luxury+Background') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* منوی اصلی */
+.menu {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px 40px;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+}
+
+.menu-item a i {
+    font-size: 50px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.menu-item a:hover {
+    color: #f1c40f;
+}
+
+.menu-item span {
+    font-size: 18px;
+    font-weight: bold;
+}

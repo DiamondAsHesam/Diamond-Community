@@ -3,33 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سایت لوکس</title>
+    <title>سایت مشابه Editagz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <div class="logo">
-            <h1>Diamond Luxury</h1>
+            <h1>سایت شیک</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="#">خانه</a></li>
-                <li><a href="#">فروشگاه</a></li>
-                <li><a href="#">پشتیبانی</a></li>
-                <li><a href="#">داشبورد</a></li>
+                <li><a href="#home">خانه</a></li>
+                <li><a href="#shop">فروشگاه</a></li>
+                <li><a href="#support">پشتیبانی</a></li>
+                <li><a href="#dashboard">داشبورد</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>به دنیای لوکس خوش آمدید</h2>
-        <p>محصولات لوکس و شیک برای شما آماده است</p>
+    <section id="home" class="home">
+        <h2>خوش آمدید به سایت شیک</h2>
+        <p>این یک طراحی ساده و شیک است که به شما این امکان را می‌دهد تا به راحتی خدمات خود را ارائه دهید.</p>
+        <button onclick="location.href='#shop'">همین حالا خرید کنید</button>
+    </section>
+
+    <section id="shop" class="shop">
+        <h3>فروشگاه ما</h3>
+        <p>محصولات لوکس و خاص اینجا قرار دارند.</p>
+    </section>
+
+    <section id="support" class="support">
+        <h3>پشتیبانی</h3>
+        <p>برای هرگونه سوال یا مشکل با ما تماس بگیرید.</p>
+    </section>
+
+    <section id="dashboard" class="dashboard">
+        <h3>داشبورد</h3>
+        <p>اطلاعات حساب کاربری شما در این بخش نمایش داده می‌شود.</p>
     </section>
 
     <footer>
-        <p>تمامی حقوق محفوظ است © 2025</p>
+        <p>&copy; 2025 Luxury Website. تمام حقوق محفوظ است.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

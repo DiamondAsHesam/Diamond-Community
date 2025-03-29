@@ -1,6 +1,6 @@
-/* بک‌گراند لوکس و مدرن */
+/* طراحی بک‌گراند شیک و مدرن */
 body {
-    background: url('https://via.placeholder.com/1500x1000?text=Luxury+Background') no-repeat center center fixed;
+    background: linear-gradient(135deg, rgba(29, 44, 98, 0.8), rgba(255, 87, 34, 0.8)), url('https://via.placeholder.com/1500x1000?text=Luxury+Background') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -12,45 +12,54 @@ body {
 .menu {
     text-align: center;
     margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .menu ul {
     list-style-type: none;
     padding: 0;
     display: flex;
+    gap: 50px;
     justify-content: center;
-    gap: 40px;
 }
 
 .menu-item {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 20px 40px;
-    transition: transform 0.3s;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 30px 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-item:hover {
     transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .menu-item a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .menu-item a i {
-    font-size: 50px;
-    margin-bottom: 10px;
+    font-size: 60px;
+    margin-bottom: 15px;
     display: block;
+    transition: color 0.3s ease;
+}
+
+.menu-item a:hover i {
+    color: #f1c40f;
 }
 
 .menu-item a:hover {
     color: #f1c40f;
-}
-
-.menu-item span {
-    font-size: 18px;
-    font-weight: bold;
 }

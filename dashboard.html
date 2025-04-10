@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>داشبورد مولتی‌میلیاردری</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Vazirmatn', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .btn {
+      position: relative;
+      background: #111;
+      padding: 12px 30px;
+      border-radius: 15px;
+      border: 1px solid #555;
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: gold;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.4s ease;
+      z-index: -1;
+    }
+
+    .btn:hover::before {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .btn:hover {
+      color: #111;
+    }
+
+    .section {
+      margin: 40px auto;
+      width: 90%;
+      max-width: 1200px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .section h2 {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 5px;
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <button class="btn">پشتیبانی</button>
+    <button class="btn">شاپ</button>
+    <button class="btn">کانال‌ها</button>
+  </header>
+
+  <section class="section">
+    <h2>لوگوی برند</h2>
+    <!-- علامت گذاری: [لوگو - اینجا فایل تصویر لوگوی برندت قرار بگیره] -->
+  </section>
+
+  <section class="section">
+    <h2>رونمایی محصولات</h2>
+    <!-- علامت گذاری: [محل نمایش محصول] -->
+  </section>
+
+  <section class="section">
+    <h2>نمونه‌کارهای ما</h2>
+    <!-- علامت گذاری: [گالری نمونه‌کارها] -->
+  </section>
+
+  <section class="section">
+    <h2>درباره ما / توضیحات</h2>
+    <!-- علامت گذاری: [توضیحات برند] -->
+  </section>
+
+  <section class="section">
+    <h2>کانال‌های ارتباطی</h2>
+    <!-- علامت گذاری: [لینک کانال‌ها] -->
+  </section>
+
+</body>
+</html>
